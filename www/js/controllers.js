@@ -4,8 +4,9 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('homeCtrl', function($scope) {
-
+.controller('homeCtrl', function($scope, authService) {
+  $scope.usuarioAtivo = {};
+  $scope.usuarioAtivo = authService.getUser();
 })
 
 .controller('atendimentoCtrl', function($scope) {
@@ -32,10 +33,10 @@ angular.module('app.controllers', [])
 
 })
 
-.controller('cadastroCtrl', function($scope) {
-  $scope.usuarios = [];
+.controller('cadastroCtrl', function($scope, authService) {
+  $scope.usuario = {};
 
   $scope.cadastrar = function (usuario) {
-    $scope.usuarios.push(usuario);
+    $scope.usuario = authService.cadastrar(usuario);
   }
 })

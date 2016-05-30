@@ -12,16 +12,16 @@
             <div class="spacer" style="width: 300px; height: 16px;"></div>
             <label class="item item-input " id="login-input3" name="matricula">
                 <span class="input-label">Matricula</span>
-                <input type="number" placeholder="">
+                <input type="number" placeholder="" ng-model="usuario.matricula">
             </label>
             <label class="item item-input " id="login-input4" name="senha">
                 <span class="input-label">Senha</span>
-                <input type="password" placeholder="">
+                <input type="password" placeholder="" ng-model="usuario.senha">
             </label>
         </form>
         <div id="login-button-bar6" class=" button-bar ">
             <a ui-sref="cadastro" id="login-button35" class=" button button-balanced  button-block ">Cadastre-se</a>
-            <a ui-sref="home" id="login-button40" class=" button button-positive  button-block ">Entrar</a>
+            <a ui-sref="home" id="login-button40" class=" button button-positive  button-block " ng-click="autenticar(usuario)">Entrar</a>
         </div>
     </ion-content>
 </ion-view>

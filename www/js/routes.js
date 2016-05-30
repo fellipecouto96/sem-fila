@@ -7,8 +7,8 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
+
+
 
       .state('login', {
     url: '/login',
@@ -16,16 +16,16 @@ angular.module('app.routes', [])
     controller: 'loginCtrl'
   })
 
-  .state('cadastro', {
-    url: '/cadastro',
-    templateUrl: 'templates/cadastro.html',
-    controller: 'cadastroCtrl'
-  })
-
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
     controller: 'homeCtrl'
+  })
+
+  .state('cadastro', {
+    url: '/cadastro',
+    templateUrl: 'templates/cadastro.html',
+    controller: 'cadastroCtrl'
   })
 
   .state('atendimento', {
@@ -66,6 +66,6 @@ angular.module('app.routes', [])
 
 $urlRouterProvider.otherwise('/login')
 
-  
+
 
 });
