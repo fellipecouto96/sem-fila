@@ -16,6 +16,12 @@ angular.module('app.routes', [])
     controller: 'loginCtrl'
   })
 
+  .state('cadastro', {
+    url: '/cadastro',
+    templateUrl: 'templates/cadastro.html',
+    controller: 'cadastroCtrl'
+  })
+
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',

@@ -1,4 +1,4 @@
-<ion-view title="Login" id="page1" class=" ">
+<ion-view title="Cadastro" id="page11" class=" ">
     <ion-content padding="true" scroll="false" class="has-header">
         <div class="spacer" style="width: 300px; height: 16px;"></div>
         <div class="">
@@ -7,21 +7,22 @@
             </a>
         </div>
         <div class="spacer" style="width: 300px; height: 16px;"></div>
-        <form id="login-form6" class="list ">
-            <h2 id="login-heading1" style="color:#5C5C5C;text-align:center;" class=" ">Sem Fila</h2>
+        <form id="cadastro-form7" class="list ">
+            <h2 id="cadastro-heading10" style="color:#5C5C5C;text-align:center;" class=" ">Sem Fila</h2>
             <div class="spacer" style="width: 300px; height: 16px;"></div>
-            <label class="item item-input " id="login-input3" name="matricula">
+            <label class="item item-input " id="cadastro-input5" name="matricula">
+                <span class="input-label">Nome</span>
+                <input type="text" placeholder="">
+            </label>
+            <label class="item item-input " id="cadastro-input6" name="senha">
                 <span class="input-label">Matricula</span>
                 <input type="number" placeholder="">
             </label>
-            <label class="item item-input " id="login-input4" name="senha">
+            <label class="item item-input " id="cadastro-input7" name="senha">
                 <span class="input-label">Senha</span>
                 <input type="password" placeholder="">
             </label>
+            <a ui-sref="home" id="cadastro-button33" style="font-size:24px;" class=" button button-balanced  button-block ">Cadastrar</a>
         </form>
-        <div id="login-button-bar6" class=" button-bar ">
-            <a ui-sref="cadastro" id="login-button35" class=" button button-balanced  button-block ">Cadastre-se</a>
-            <a ui-sref="home" id="login-button40" class=" button button-positive  button-block ">Entrar</a>
-        </div>
     </ion-content>
 </ion-view>

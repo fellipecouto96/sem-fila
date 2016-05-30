@@ -4,6 +4,10 @@ angular.module('app.controllers', [])
 
 })
    
+.controller('cadastroCtrl', function($scope) {
+
+})
+   
 .controller('homeCtrl', function($scope) {
 
 })
