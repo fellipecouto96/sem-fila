@@ -3,16 +3,16 @@
         <div class="list card " id="atendimento-card24">
             <h5 id="atendimento-heading6" style="color:#5C5C5C;font-weight:400;text-align:center;" class=" ">PUC MINAS - Sem Fila</h5>
             <ion-item class="item-avatar item-icon-right positive  " id="atendimento-list-item7" ui-sref="home">
-                <h2positive>Aluno
-                    <p style="white-space:normal;">Matricula</p>
+                <h2positive>{{usuarioAtivo.nome}}
+                    <p style="white-space:normal;">{{usuarioAtivo.matricula}}</p>
                     <i class="icon ion-log-out icon-accessory"></i>
                 </h2positive>
             </ion-item>
         </div>
         <h3 id="atendimento-heading8" style="color:#000000;font-weight:400;text-align:center;" class=" ">Setor</h3>
         <div class="spacer" style="width: 285px; height: 30px;"></div>
-        <a ui-sref="divisOFinanceira" id="atendimento-button7" style="font-weight:500;" class=" button button-positive  button-block ">Divisão Financeira</a>
-        <a ui-sref="secretRiaAcadMica" id="atendimento-button8" style="font-weight:500;" class=" button button-positive  button-block ">Secretaria Acadêmica</a>
+        <a ui-sref="divisOFinanceira" id="atendimento-button7" style="font-weight:500;" class=" button button-positive  button-block " ng-click="solicitar('f')">Divisão Financeira</a>
+        <a ui-sref="secretRiaAcadMica" id="atendimento-button8" style="font-weight:500;" class=" button button-positive  button-block " ng-click="solicitar('a')">Secretaria Acadêmica</a>
         <a ui-sref="home" id="atendimento-button38" class=" button button-assertive button-small button-block ">Voltar</a>
     </ion-content>
 </ion-view>

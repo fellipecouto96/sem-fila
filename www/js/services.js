@@ -16,7 +16,21 @@ angular.module('app.services', [])
   }
 
   this.getUser = function () {
-    console.log('getUser');
+
     return this.usuarioAtivo;
+  }
+}])
+
+.service('atendimentoService', [function($scope){
+  this.tipoAtendimento = [];
+  this.senhaAtual = 0;
+
+  this.solicitar = function (tipo) {
+      this.tipoAtendimento.push(tipo);
+  }
+
+  this.getTipoAtendimento = function () {
+
+    return this.tipoAtendimento;
   }
 }]);

@@ -8,14 +8,6 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
-
-
-      .state('login', {
-    url: '/login',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
-  })
-
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
@@ -64,7 +56,7 @@ angular.module('app.routes', [])
     controller: 'telaDeAgradecimentoCtrl'
   })
 
-$urlRouterProvider.otherwise('/login')
+$urlRouterProvider.otherwise('/cadastro')
 
 
 
